@@ -1,0 +1,26 @@
+RODZINNY PLANER WYCIECZEK V9.5 — URUCHOMIENIE NA TELEFONIE
+
+Ważne: nie da się uruchomić backendu Python przez samo otwarcie index.html na Androidzie.
+Aby mieć działający adres internetowy, aplikację trzeba raz wdrożyć na hostingu. Ten pakiet
+zawiera plik render.yaml, który upraszcza konfigurację Render.
+
+WDROŻENIE
+1. Zaloguj się lub załóż konto w GitHub.
+2. Utwórz nowe repozytorium.
+3. Wgraj do głównego katalogu repozytorium wszystkie pliki z tego ZIP-a:
+   index.html, app.py, requirements.txt, Procfile, runtime.txt, render.yaml oraz README.
+4. Zaloguj się do Render i wybierz New > Blueprint.
+5. Połącz Render z repozytorium GitHub i wybierz repozytorium aplikacji.
+6. Render odczyta render.yaml i skonfiguruje usługę. Uruchom wdrożenie.
+7. Po zakończeniu Render pokaże publiczny adres HTTPS, np. https://nazwa-uslugi.onrender.com.
+   Otwórz ten adres na telefonie. Nie używaj adresu 127.0.0.1 na telefonie.
+8. Sprawdź adres https://TWOJ-ADRES/api/health. Powinien zwrócić JSON z wersją 9.5 i statusem ok.
+9. W planerze wyszukaj Sandomierz i sprawdź pobieranie danych.
+
+UWAGI
+- Można próbować wykonać te kroki w przeglądarce telefonu, ale wgrywanie plików ZIP do GitHub
+  jest zwykle wygodniejsze na komputerze.
+- Hosting może wymagać potwierdzenia konta. Darmowe usługi mogą usypiać aplikację.
+- Hosting nie usuwa awarii publicznych API. Jeśli Overpass nie odpowie, backend pokaże błąd.
+- Nie mogę z poziomu tej rozmowy utworzyć konta, połączyć go z GitHub ani opublikować publicznego
+  adresu w Twoim imieniu.
