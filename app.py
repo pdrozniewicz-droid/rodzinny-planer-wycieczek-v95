@@ -104,7 +104,7 @@ def overpass():
                 endpoint,
                 data={'data': query},
                 headers={'User-Agent': USER_AGENT, 'Accept': 'application/json'},
-                timeout=(6, 22)
+                timeout=(3, 10)
             )
             if r.status_code in (429, 502, 503, 504) or r.status_code >= 500:
                 errors.append(f'{endpoint}: HTTP {r.status_code}')
